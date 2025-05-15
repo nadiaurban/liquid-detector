@@ -8,6 +8,15 @@ from PIL import Image
 # Placeholder variables and model loading
 # ---------------------------
 
+
+st.set_page_config(
+    page_title="Liquid detector",  # This shows up in the browser tab
+    page_icon="💧",                   # Optional: Emoji or URL to an icon
+    layout="centered",                # Optional: 'centered' or 'wide'
+    initial_sidebar_state="auto"     # Optional: 'auto', 'expanded', 'collapsed'
+)
+
+
 # Update the class labels if needed (should match your model's output encoding)
 CLASS_NAMES = ["liquid", "no liquid"] # <-- UPDATE: Replace with actual class names from "labels.txt"
 
